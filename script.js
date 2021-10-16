@@ -106,3 +106,5 @@ function bizzBuzz(valor){
 console.log(bizzBuzz('porco'))
 
 let idade = 10;
+
+let idade2 = 20;
