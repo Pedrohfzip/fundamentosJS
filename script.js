@@ -66,6 +66,7 @@ switch(permissao){
 */
 
 
+/*
 //Loop
 for(let i = 0; i < 10;i++){
     console.log(`${i},` + `${i}`)
@@ -86,8 +87,9 @@ function maiorNumero(numero1,numero2){
     return numero1 > numero2 ? numero1: numero2;
 }
 console.log(maiorNumero(21,20))
+*/
 
-
+/*
 
 function bizzBuzz(valor){
     if(valor % 3 == 0 && valor % 5 == 0 ){
@@ -96,15 +98,63 @@ function bizzBuzz(valor){
         return 'Fizz'
     }else if(valor % 3 == 1 && valor % 5 == 1){
         return 'Buzz'
-    }else if(valor != 'number'){
+    }else if(typeof valor !== 'number'){
         return 'Não é numero';
     }else{
         return null;
     }
 }
 
-console.log(bizzBuzz('porco'))
+console.log(bizzBuzz('gol'))
+*/
 
-let idade = 10;
 
-let idade2 = 20;
+/*
+//velocidade maximo 70km
+function medirVelocidade(velocidade){
+    let carteira = 0;
+    if(velocidade == 70){
+        console.log('Você esta no limite');
+    }else if( velocidade >= 70){
+        let veloNova = (velocidade - 70) / 5
+        console.log(`Voce ultrapassou o limite`)
+        carteira += veloNova
+        console.log(`Sua carteira tem ${Math.floor(carteira)} pontos`)
+    }
+
+    
+}
+
+console.log(medirVelocidade(90))
+*/
+
+/*
+const filme = {
+    nome: 'Harry Potter',
+    preco: 20,
+    ator: 'Harry',
+    dia: 10
+}
+
+function exibirProprioedades(filme){
+    for(let i in filme){
+        if(typeof filme[i] === 'string'){
+            console.log(filme[i])
+           
+        }
+    }
+
+}
+
+exibirProprioedades(filme)
+*/                    
+
+function contarAteriscos(linhas){
+    let padrao = ' ';
+    for(let i = 0; i <= linhas; i++){
+        padrao += '*';
+        console.log(padrao)
+    }
+}
+contarAteriscos(10)
+
